@@ -15,7 +15,7 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
 }
 
-// IntelliJ Platform 插件配置
+// IntelliJ Platform plugin configuration
 intellij {
     version.set("2023.2.5")
     type.set("IC") // IntelliJ IDEA Community Edition
@@ -23,7 +23,7 @@ intellij {
 }
 
 tasks {
-    // 设置JVM兼容版本
+    // JVM compatibility
     withType<JavaCompile> {
         sourceCompatibility = "17"
         targetCompatibility = "17"
@@ -38,12 +38,12 @@ tasks {
     }
 
     signPlugin {
-        certificateChain.set(System.getenv("CERTIFICATE_CHAIN"))
-        privateKey.set(System.getenv("PRIVATE_KEY"))
-        password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
+        certificateChain.set(providers.environmentVariable("CERTIFICATE_CHAIN"))
+        privateKey.set(providers.environmentVariable("PRIVATE_KEY"))
+        password.set(providers.environmentVariable("PRIVATE_KEY_PASSWORD"))
     }
 
     publishPlugin {
-        token.set(System.getenv("PUBLISH_TOKEN"))
+        token.set(providers.environmentVariable("PUBLISH_TOKEN"))
     }
 }
