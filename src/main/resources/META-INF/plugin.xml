@@ -2,7 +2,7 @@
     <id>com.leoleo.apidoc</id>
     <name>ApiDocument</name>
     <version>1.0.0</version>
-    <vendor email="ll2@yalaw.cn" url="https://gitee.com/lilong169/ApiDocument">lilong169</vendor>
+    <vendor email="1096355043@qq.com" url="https://gitee.com/lilong169/ApiDocument">lilong</vendor>
 
     <description><![CDATA[
     <p>ApiDocument generates ShowDoc-style API Markdown documents from Java Spring MVC Controllers.</p>
