@@ -1,0 +1,70 @@
+<idea-plugin>
+    <id>com.leoleo.apidoc</id>
+    <name>ApiDoc</name>
+    <version>1.0.0</version>
+    <vendor email="your-email@example.com" url="https://github.com/your-repo">ApiDoc</vendor>
+
+    <description><![CDATA[
+    <p>从Java Controller接口自动生成ShowDoc格式的API文档。</p>
+    <p>功能特性：</p>
+    <ul>
+        <li>在Controller类和方法旁显示文档生成图标，一键生成</li>
+        <li>自动读取Controller类的接口信息（URL、请求方式、参数等）</li>
+        <li>自动从Git分支获取当前版本号</li>
+        <li>生成符合ShowDoc格式的Markdown文档</li>
+        <li>支持配置作者名称和产品版本</li>
+        <li>支持复制到剪贴板或导出文件</li>
+    </ul>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <p>1.0.0 - 初始版本</p>
+    <ul>
+        <li>支持从Spring MVC Controller生成ShowDoc文档</li>
+        <li>在Controller类名和接口方法旁显示图标</li>
+        <li>支持GET/POST/PUT/DELETE等请求方式</li>
+        <li>自动解析请求参数和返回值</li>
+        <li>支持Git分支版本号获取</li>
+    </ul>
+    ]]></change-notes>
+
+    <!-- 插件兼容的IntelliJ IDEA最低版本 -->
+    <idea-version since-build="232" until-build="243.*"/>
+
+    <!-- 插件依赖 -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>Git4Idea</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- 插件配置持久化服务 -->
+        <applicationService
+                serviceImplementation="com.leoleo.apidoc.config.ShowDocSettings"/>
+
+        <!-- 行标记图标：在Controller类和方法旁显示图标 -->
+        <codeInsight.lineMarkerProvider
+                language="JAVA"
+                implementationClass="com.leoleo.apidoc.linemarker.ApiDocLineMarkerProvider"/>
+    </extensions>
+
+    <actions>
+        <!-- 在编辑器右键菜单中添加生成文档的选项 -->
+        <action id="ApiDoc.Generate"
+                class="com.leoleo.apidoc.action.GenerateShowDocAction"
+                text="ApiDoc - 生成接口文档"
+                description="从当前Controller生成ShowDoc格式的API文档"
+                icon="/icons/apidoc.svg">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+
+        <!-- 为单个方法生成文档 -->
+        <action id="ApiDoc.GenerateMethod"
+                class="com.leoleo.apidoc.action.GenerateMethodDocAction"
+                text="ApiDoc - 生成当前方法文档"
+                description="从当前方法生成ShowDoc格式的API文档"
+                icon="/icons/apidoc-method.svg">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

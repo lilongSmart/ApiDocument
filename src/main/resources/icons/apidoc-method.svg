@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- 方法级别图标：蓝色圆形 + API符号 -->
+  <defs>
+    <linearGradient id="apiDocMethodBlueWhite" x1="2" y1="1" x2="14" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F5FBFF"/>
+      <stop offset="0.42" stop-color="#8FD1FF"/>
+      <stop offset="1" stop-color="#2B6FEA"/>
+    </linearGradient>
+  </defs>
+  <circle cx="8" cy="8" r="7.5" fill="url(#apiDocMethodBlueWhite)"/>
+  <text x="8" y="11.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="white">A</text>
+</svg>

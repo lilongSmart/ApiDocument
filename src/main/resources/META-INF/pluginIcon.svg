@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <!-- 圆形背景 -->
+  <defs>
+    <linearGradient id="apiDocBlueWhite" x1="7" y1="5" x2="33" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F5FBFF"/>
+      <stop offset="0.42" stop-color="#8FD1FF"/>
+      <stop offset="1" stop-color="#2B6FEA"/>
+    </linearGradient>
+  </defs>
+  <circle cx="20" cy="20" r="20" fill="url(#apiDocBlueWhite)"/>
+  
+  <!-- 简约文档符号：一个尖括号 + 斜杠，代表代码文档 </> -->
+  <text x="20" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">&lt;/&gt;</text>
+</svg>
