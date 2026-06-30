@@ -1,6 +1,6 @@
-# ApiDoc
+# ApiDocument
 
-ApiDoc 是一个 IntelliJ IDEA 插件，用于从 Java Spring MVC Controller 自动生成 ShowDoc 风格的 API Markdown 文档。
+ApiDocument 是一个 IntelliJ IDEA 插件，用于从 Java Spring MVC Controller 自动生成 ShowDoc 风格的 API Markdown 文档。
 
 ## 功能特性
 
@@ -36,7 +36,7 @@ macOS / Linux:
 构建后的插件包位于：
 
 ```text
-build/distributions/apidoc-plugin-1.0.0.zip
+build/distributions/apidocument-plugin-1.0.0.zip
 ```
 
 ## 安装
@@ -47,14 +47,14 @@ build/distributions/apidoc-plugin-1.0.0.zip
 Settings -> Plugins -> Install Plugin from Disk...
 ```
 
-选择 `build/distributions/apidoc-plugin-1.0.0.zip` 安装即可。
+选择 `build/distributions/apidocument-plugin-1.0.0.zip` 安装即可。
 
 ## 使用方式
 
 1. 打开一个 Spring MVC Controller Java 文件。
-2. 点击类名或接口方法旁边的 ApiDoc 行标记图标。
+2. 点击类名或接口方法旁边的 ApiDocument 行标记图标。
 3. 在弹出的工作台中查看、编辑、复制或导出生成的 Markdown 文档。
-4. 如需调整作者、产品版本、语言、预览字号、排除父类字段等，点击工作台底部的“设置”。
+4. 如需调整作者、产品版本、语言、预览字号、排除父类字段等，点击工作台底部的"设置"。
 
 ## 主要配置
 

@@ -1,1 +1,1 @@
-rootProject.name = "apidoc-plugin"
+rootProject.name = "apidocument-plugin"

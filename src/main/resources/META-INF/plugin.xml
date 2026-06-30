@@ -1,11 +1,11 @@
 <idea-plugin>
     <id>com.leoleo.apidoc</id>
-    <name>ApiDoc</name>
+    <name>ApiDocument</name>
     <version>1.0.0</version>
-    <vendor email="ll2@yalaw.cn" url="https://gitee.com/lilong169/ApiDoc">lilong169</vendor>
+    <vendor email="ll2@yalaw.cn" url="https://gitee.com/lilong169/ApiDocument">lilong169</vendor>
 
     <description><![CDATA[
-    <p>ApiDoc generates ShowDoc-style API Markdown documents from Java Spring MVC Controllers.</p>
+    <p>ApiDocument generates ShowDoc-style API Markdown documents from Java Spring MVC Controllers.</p>
     <p>Features:</p>
     <ul>
         <li>Generate API documentation from Controller classes or individual endpoint methods.</li>
@@ -45,18 +45,18 @@
     </extensions>
 
     <actions>
-        <action id="ApiDoc.Generate"
+        <action id="ApiDocument.Generate"
                 class="com.leoleo.apidoc.action.GenerateShowDocAction"
-                text="ApiDoc - Generate API Docs"
+                text="ApiDocument - Generate API Docs"
                 description="Generate ShowDoc-style API Markdown from the current Controller."
                 icon="/icons/apidoc.svg">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
 
-        <action id="ApiDoc.GenerateMethod"
+        <action id="ApiDocument.GenerateMethod"
                 class="com.leoleo.apidoc.action.GenerateMethodDocAction"
-                text="ApiDoc - Generate Current Method Docs"
+                text="ApiDocument - Generate Current Method Docs"
                 description="Generate ShowDoc-style API Markdown from the current endpoint method."
                 icon="/icons/apidoc-method.svg">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>

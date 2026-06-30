@@ -6,7 +6,7 @@ import com.intellij.openapi.components.State
 import com.intellij.openapi.components.Storage
 
 /**
- * ApiDoc 文档生成器的持久化配置
+ * ApiDocument 文档生成器的持久化配置
  */
 @State(
     name = "ApiDocSettings",

@@ -14,7 +14,7 @@ import javax.swing.*
 import javax.swing.event.ListSelectionEvent
 
 /**
- * ApiDoc 接口文档编辑与预览对话框
+ * ApiDocument 接口文档编辑与预览对话框
  */
 class ShowDocPreviewDialog(
     private val project: Project,

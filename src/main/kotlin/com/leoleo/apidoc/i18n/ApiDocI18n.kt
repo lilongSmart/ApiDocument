@@ -117,10 +117,10 @@ object ApiDocI18n {
         "warning.notApiMethod" to "当前方法不是API接口方法（未找到RequestMapping等注解）",
         "action.generateController" to "生成接口文档",
         "action.generateMethod" to "生成当前方法文档",
-        "gutter.classTooltip" to "ApiDoc: 生成整个Controller的接口文档",
-        "gutter.classText" to "ApiDoc: 生成Controller文档",
-        "gutter.methodTooltip" to "ApiDoc: 生成该方法的接口文档",
-        "gutter.methodText" to "ApiDoc: 生成方法文档"
+        "gutter.classTooltip" to "ApiDocument: 生成整个Controller的接口文档",
+        "gutter.classText" to "ApiDocument: 生成Controller文档",
+        "gutter.methodTooltip" to "ApiDocument: 生成该方法的接口文档",
+        "gutter.methodText" to "ApiDocument: 生成方法文档"
     )
 
     private val en = mapOf(
@@ -226,10 +226,10 @@ object ApiDocI18n {
         "warning.notApiMethod" to "The current method is not an API method. RequestMapping annotations were not found.",
         "action.generateController" to "Generate API Docs",
         "action.generateMethod" to "Generate Current Method Docs",
-        "gutter.classTooltip" to "ApiDoc: Generate API docs for the whole Controller",
-        "gutter.classText" to "ApiDoc: Generate Controller docs",
-        "gutter.methodTooltip" to "ApiDoc: Generate API docs for this method",
-        "gutter.methodText" to "ApiDoc: Generate method docs"
+        "gutter.classTooltip" to "ApiDocument: Generate API docs for the whole Controller",
+        "gutter.classText" to "ApiDocument: Generate Controller docs",
+        "gutter.methodTooltip" to "ApiDocument: Generate API docs for this method",
+        "gutter.methodText" to "ApiDocument: Generate method docs"
     )
 
     fun currentLanguage(): ApiDocLanguage = ApiDocLanguage.fromCode(ShowDocSettings.getInstance().state.language)

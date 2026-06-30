@@ -15,7 +15,7 @@ import com.intellij.psi.util.PsiTreeUtil
 import javax.swing.Icon
 
 /**
- * ApiDoc 行标记提供器
+ * ApiDocument 行标记提供器
  * 在Controller类名和接口方法旁的行号区域显示可点击图标
  * 点击图标即可生成对应的API文档
  */
